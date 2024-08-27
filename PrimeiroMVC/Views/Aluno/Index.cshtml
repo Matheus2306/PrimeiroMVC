@@ -12,4 +12,19 @@
             <th>Matrícula</th>
         </tr>
     </thead>
+
+    <tbody>
+
+        @foreach (var alunos in Model)
+        {
+            <tr>
+
+                <td>@alunos.AlunoId</td>
+                <td>@alunos.Nome</td>
+                <td>@alunos.Email</td>
+                <td>@alunos.RM</td>
+            </tr>
+        }
+
+    </tbody>
 </table>
